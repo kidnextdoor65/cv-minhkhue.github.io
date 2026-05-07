@@ -161,4 +161,174 @@
         }
 
         /* Skills Layout */
-        .skills-grid
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-color);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: #edf2f7;
+            color: var(--secondary-color);
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .skill-tag.highlight {
+            background-color: #fed7d7;
+            color: var(--highlight-color);
+        }
+
+        @media (max-width: 600px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .timeline-header {
+                flex-direction: column;
+            }
+            .timeline-header .date {
+                margin-top: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header>
+            <img src="image/1.jpg" alt="Lâm Châu Minh Khuê" class="profile-img">
+            <h1>Lâm Châu Minh Khuê</h1>
+            <h2>Chuyên viên Kinh doanh Bất động sản</h2>
+            <div class="contact-info">
+                <span>📅 02/05/2005</span>
+                <span>📞 09xx.xxx.xxx</span>
+                <span>✉️ minhkhue.bds@email.com</span>
+                <span>📍 Đà Nẵng</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
+                <p>
+                    Khao khát phát triển trở thành chuyên gia phân phối các dòng sản phẩm bất động sản cao cấp, đặc biệt là các dự án của Sun Group. Bằng việc kết hợp kỹ năng đàm phán, khả năng chăm sóc khách hàng VIP và tư duy nhạy bén trong Digital Marketing, tôi hướng đến mục tiêu xây dựng một mạng lưới nhà đầu tư vững chắc, liên tục tái đầu tư, mang lại doanh thu đột phá cho công ty.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Kỹ năng nổi bật</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Chuyên môn & Nghiệp vụ</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Giao tiếp & Đàm phán</span>
+                            <span class="skill-tag highlight">Chăm sóc khách hàng VIP</span>
+                            <span class="skill-tag">Phân tích thị trường</span>
+                            <span class="skill-tag">Tư vấn dự án Sun Group</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Ngoại ngữ & Công cụ</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag highlight">Tiếng Anh B2 (CEFR)</span>
+                            <span class="skill-tag">Facebook Ads</span>
+                            <span class="skill-tag">TikTok Ads</span>
+                            <span class="skill-tag">Content Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Kinh nghiệm làm việc</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Chuyên viên Kinh doanh Dự án (Tập trung Sun Group)</h3>
+                        <span class="date">08/2024 – Hiện tại</span>
+                    </div>
+                    <div class="company">Công ty Cổ phần Địa ốc Tatiland</div>
+                    <ul>
+                        <li><strong>Phân phối sản phẩm:</strong> Trực tiếp tư vấn và chốt giao dịch các dòng sản phẩm đất nền thuộc các đại đô thị như Nam Hòa Xuân, Sunneva Island, Sun Riverpolis.</li>
+                        <li><strong>Nghiên cứu thị trường:</strong> Theo dõi sát sao bảng giá, tiến độ hạ tầng và các chính sách bán hàng từ chủ đầu tư Sun Group để tư vấn kịp thời cho nhà đầu tư.</li>
+                        <li><strong>Xây dựng phễu khách hàng:</strong> Áp dụng kinh nghiệm marketing để lọc dữ liệu khách hàng có thu nhập cao (HNWI), tập trung vào đối tượng quan tâm đến giá trị nghỉ dưỡng và vị thế của Sun Group.</li>
+                        <li><strong>Kết quả:</strong> Hoàn thành xuất sắc chỉ tiêu doanh số với tổng giá trị giao dịch đạt hơn <strong>5 tỷ VNĐ</strong>. Xây dựng mạng lưới hơn <strong>10</strong> khách hàng thân thiết thường xuyên tái đầu tư.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Cộng tác viên Phân tích Thị trường BĐS</h3>
+                        <span class="date">01/2024 – 07/2024</span>
+                    </div>
+                    <div class="company">Làm việc tự do (Freelance)</div>
+                    <ul>
+                        <li><strong>Phân tích tác động:</strong> Đánh giá ảnh hưởng của các sự kiện lớn (như Lễ hội pháo hoa quốc tế Sun Festive) đến giá trị bất động sản khu vực lân cận tại Đà Nẵng.</li>
+                        <li><strong>Nghiên cứu đối thủ:</strong> Thực hiện các bài đánh giá, so sánh sản phẩm của Sun Group với các chủ đầu tư khác tại Đà Nẵng để cung cấp góc nhìn khách quan, hỗ trợ khách hàng ra quyết định.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Chuyên viên chạy Ads (Freelance)</h3>
+                        <span class="date">06/2023 – 12/2023</span>
+                    </div>
+                    <div class="company">Freelance Ads</div>
+                    <ul>
+                        <li>Trực tiếp lên ý tưởng, thiết lập và tối ưu hóa các chiến dịch quảng cáo trên nền tảng Facebook Ads và TikTok Ads.</li>
+                        <li>Phân tích dữ liệu người dùng để tạo phễu data khách hàng tiềm năng cho phân khúc BĐS cao cấp.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🌟 Các dự án tiêu biểu đã triển khai</h2>
+                <div class="timeline-item">
+                    <ul>
+                        <li><strong>Đất nền Nam Hòa Xuân:</strong> Tư vấn thành công cho khách hàng các lô vị trí mặt sông, trục thông, đón đầu xu hướng mở rộng đô thị về phía Nam Đà Nẵng.</li>
+                        <li><strong>Sunneva Island:</strong> Tham gia phân tích mô hình đảo biệt thự sang trọng, giúp khách hàng hiểu rõ giá trị khan hiếm của quỹ đất đảo tự nhiên.</li>
+                        <li><strong>Sun Riverpolis:</strong> Triển khai các chiến dịch tìm kiếm khách hàng cho phân khúc đô thị ven sông đáng sống nhất Đà Nẵng.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">🎓 Học vấn & Chứng chỉ</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Sinh viên năm 3 - Ngành Quản trị Kinh doanh</h3>
+                        <span class="date">Hiện tại</span>
+                    </div>
+                    <div class="company">Đại học Duy Tân</div>
+                    <ul>
+                        <li>Nắm vững kiến thức nền tảng về kinh tế, marketing và quản trị chiến lược.</li>
+                    </ul>
+                    
+                    <h3 style="margin-top: 1rem; color: var(--text-color); font-size: 1.1rem; font-weight: bold;">Chứng chỉ chuyên môn:</h3>
+                    <ul style="margin-top: 0.5rem;">
+                        <li><strong>Ngoại ngữ:</strong> Chứng chỉ Tiếng Anh trình độ B2 (CEFR).</li>
+                        <li><strong>Chứng chỉ hành nghề:</strong> Môi giới Bất động sản.</li>
+                        <li><strong>Khóa đào tạo chuyên sâu:</strong> "Văn hóa và Hệ sinh thái Sun Group".</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
